@@ -55,6 +55,7 @@ body {
 #bg-layer {
     background-color: rgba(248, 247, 216, 0.4);
     position: absolute;
+    opacity: .3 ;
     top: 0;
     left: 0;
     width: 100vw;
@@ -482,6 +483,20 @@ z-index: 0;
     font-size: 20px;
     padding: 10px;
     text-align: center;
+}
+
+.nasa-disclaimer {
+    display: -webkit-flex;
+    align-items: flex-end;
+    text-align: right;
+    -webkit-justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: #e008c;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    padding-right: 70px;
+    
 }
 
 .contact-title {
