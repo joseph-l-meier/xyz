@@ -533,10 +533,12 @@ z-index: 0;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     transition: transform .3s ease-in-out;
+    -webkit-transition: fransform .3s ease-in-out;
 }
 
 #contact-left:hover {
     transform: rotateZ(30deg);
+    -webkit-transform: rotateZ(30deg);
 }
 
 
@@ -548,10 +550,12 @@ z-index: 0;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
     transition: transform .3s ease-in-out;
+    -webkit-transition: fransform .3s ease-in-out;
 }
 
 #contact-right:hover {
     transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
 }
 
 .highlight:hover{
