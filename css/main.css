@@ -26,6 +26,30 @@ body {
 
 #video-bg-elem {
     height: 100%;
+    width: 100vw;
+}
+
+.video-text {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    color: #ec008c;
+}
+
+#video-h1 {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    
+    
 }
 
 #bg-layer {
@@ -33,18 +57,19 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 1080px;
+    width: 100vw;
+    height: 100%;
 }
 #nav-button {
   
-  width: 150px;
-  height: 50px;
+  width: 130px;
+  height: 40px;
   font-size: 12px;
   color:white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   background: #454545;
+  opacity: .5;
   border: 0;
   border-bottom: 2px solid #2f2e2e;
   cursor: pointer;
@@ -53,11 +78,14 @@ body {
 }
 
 #navcontainer{
+    display: -webkit-flex;
+    -webkit-justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
     right:0;
-    padding: 16px;
+    padding: 0px;
+    margin: 0 auto;
     z-index: 2;
 }
 #navcontainer ul li {
@@ -66,6 +94,7 @@ body {
     padding: 0px;
     align-items: center;
     text-align: right;
+    margin: 0 auto;
 }
 
 .welcome {
@@ -105,49 +134,75 @@ body {
 }
 
 
-.content {
+.Im-joe {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
-    text-align: center;
-    height: 1050px;
+    background-color: white;
+    -webkit-justify-content: center;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    background: #ec008c;
-    padding-bottom: 0px;
-
+    color: #ec008c;
+    font-size: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    
 }
-.content-list {
+
+
+
+.explain {
+    position: relative;
+    -webkit-justify-content: space-around;
+    align-content: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -align-items: center;
-    color: white;
-    text-align: right;
-    font-size: 40px;
-    line-height: 30px;
-    -webkit-justify-content: space-between;
-    padding: 10px;
+    -webkit-flex-direction: row;
+    max-width: 100vw;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Montserrat', sans-serif;
+    color: #36454f;
+    font-size: 25px;
+    background-color: white;
+    -webkit-box-shadow: 1px 21px 33px 0px rgba(0,0,0,0.25);
+    z-index: 2;
+    line-height: 50px;
 }
 
+#span1:hover {
+     font-color: yellow
+}
+
+#left {
+    width: 800px;
+    padding-right: 30px;
+}
+
+#right {
+    width: 500px;
+    padding-left: 30px;
+
+}
 
 .claim {
     display: -webkit-flex;
     -webkit-flex-direction: column;
     align-items: center;
     justify-content: space-between;
-     background-color: #00FFFF;
-    -webkit-box-shadow: 10px 10px 122px 2px rgba(0,0,0,0.89);
--moz-box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
-box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
-    z-index: 2;
-    padding-bottom: 300px;
+     background-color: #eaeaea;
+    z-index: 1;
+    padding-bottom: 100px;
 
 }
 
 #claim-title {
-    padding-top: 100px;
+    padding-top: 300px;
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
+    color: #ec008c;
 }
 
 .claim-list {
@@ -171,10 +226,10 @@ box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
 }
 
 .claim-text {
-    font-size: 15px;
+    font-size: 20px;
     max-width: 200px;
-    text-align: left;
-    padding-top: 1.7em;
+    text-align: center;
+    padding-top: 1.5em;
 }
 
 #claim-1 {
@@ -184,10 +239,12 @@ box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
     text-align: left;
     max-width: 500px;
     padding: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 1.5em;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: #36454f;
 }
 
 #claim-2 {
@@ -197,10 +254,12 @@ box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
     text-align: left;
     max-width: 500px;
     padding: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 1.5em;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+    color:  #36454f;
     
 }
 
@@ -212,14 +271,16 @@ box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
     text-align: left;
     max-width: 500px;
     padding: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 1.5em;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+    color:  #36454f;
     transform: translatey(0px);
 }
 #cm1 {
-    animation: float 6s ease-in-out infinite;
+    animation: float 6.2s ease-in-out infinite;
 	img { width: 100%; height: auto; }
 }
 
@@ -229,7 +290,7 @@ box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
 }
 
 #cm3 {
-    animation: float 6s ease-in-out infinite;
+    animation: float 5.8s ease-in-out infinite;
 	img { width: 100%; height: auto; }
 }
 
@@ -249,58 +310,6 @@ box-shadow: 10px 10px 122px 2px rgba(10,10,10,0.89);
 }
 
 
-
-.explain {
-    position: relative;
-    -webkit-justify-content: space-around;
-    align-content: center;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    max-width: 100vw;
-    text-align: left;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 15px;
-    background-color: #FF1493;
-    -webkit-box-shadow: -4px 4px 66px 31px rgba(0,0,0,0.75);
-    z-index: 2;
-    line-height: 30px;
-}
-
-#left {
-    width: 500px;
-    padding-right: 30px;
-}
-
-#right {
-    width: 500px;
-    padding-left: 30px;
-
-}
-
-
-.speakers-title {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 50px;
-    padding-top: 150px;
-    
-}
-.speakers {
-    display: -webkit-flex;
-    -webkit-box-shadow: 0px 0px 65px 3px rgba(0,0,0,0.6);
-    background-color: #ec008c;
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    text-align: center;    
-
-}
-
 ul {
     display: inline-block;
     list-style-type: none;
@@ -314,86 +323,19 @@ ul {
     padding: 3em;
 }
 
-.speaker-text {
-    font-size: 15px;
-    max-width: 200px;
-    text-align: left;
-}
-
-#speaker-1 {
-    color: white ;
+.pre-out {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
-    align-items: left;
-    text-align: left;
-    max-width: 160px;
-    padding: 1em;
-    line-height: 26px;
-    font-size: 8px;
-
-
-
-}
-#speaker-2 {
-    color: white ;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    align-items: left;
-    text-align: left;
-    max-width: 160px;
-    padding: 1em;
-    line-height: 26px;
-    font-size: 8px;
-
+    -webkit-justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ec008c;
+     
 }
 
-#speaker-3 {
-    color: white ;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    align-items: left;
-    text-align: left;
-    max-width: 160px;
-    padding: 1em;
-    line-height: 26px;
-    font-size: 8px;
-}
-
-#speaker-4 {
-    color: white ;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    align-items: left;
-    text-align: left;
-    max-width: 160px;
-    padding: 1em;
-    line-height: 26px;
-    font-size: 8px;
-}
-
-#speaker-5 {
-    color: white ;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    align-items: left;
-    text-align: left;
-    max-width: 160px;
-    padding: 1em;
-    line-height: 26px;
-    font-size: 8px;
-}
-
-#speaker-6 {
-    color: white ;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    align-items: left;
-    text-align: left;
-    max-width: 160px;
-    padding: 1em;
-    line-height: 26px;
-    font-size: 8px;
-}
 .outro {
     display: -webkit-flex;
 -webkit-justify-content: space-around;
@@ -403,13 +345,13 @@ align-items: center;
 align-content: center;
 text-align: center;
 position: relative;
-height: 75vh;
+height: 100%;
 background: linear-gradient(90deg, white 50vw, white 50vw);
 z-index: 0;
 
 }
 
-.card-container {
+.card-container-left {
     position: relative;
     display: -webkit-flex;
     -webkit-flex-direction: column;
@@ -420,7 +362,23 @@ z-index: 0;
     width: 50vw;
     padding: 20px;
     min-width: 30vw;
-    background-color: #003a54 ;
+    background-color: #ec008c ;
+    height: 75vh;
+
+}
+
+.card-container-right {
+    position: relative;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 50vw;
+    padding: 20px;
+    min-width: 30vw;
+    background-color: #ec008c ;
     height: 75vh;
 
 }
@@ -456,17 +414,15 @@ z-index: 0;
   color: #0087cc;
   line-height: 3em;
   text-align: justify;
-  padding: 180px;
+  padding: 120px;
   font-family: 'Montserrat', sans-serif;
   color: black;
   transform: rotateY(180deg);
   
 }
-
-#nasa {
-     background-image:url(images/dog.png) fixed center;
+#cyan {
+    background-color: cyan;
 }
-
 
 .outro-right {
     display: -webkit-flex;
@@ -528,166 +484,49 @@ z-index: 0;
     text-align: center;
 }
 
-.enjoy-css {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 250px;
-  height: 70px;
-  cursor: pointer;
-  margin: 0 auto;
-  border: 2px solid white;
-  -webkit-border-radius: 40px;
-  border-radius: 0px;
-  font: normal 37px/70px "Advent Pro", Helvetica, sans-serif;
-  color: black);
-  text-align: center;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  letter-spacing: 1px;
-  background: rgba(0,0,0,0);
-  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-}
-
-.enjoy-css:hover {
-  color: rgba(255,255,255,1);
-  background: white;
-}
-
-.enjoy-css:active {
-  border: 2px solid rgba(33,224,163,1);
-  background: rgba(33,224,163,1);
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-#input {
+.contact-title {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
-    text-align: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #e008c;
+    font-size: 20px;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    text-align: center;
 }
 
-#submit {
+.contact-info {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    -webkit-justify-content: space-between;
+    -webkit-flex-direction: row;
 }
 
-#last-button{
-    -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 250px;
-  height: 70px;
-  cursor: pointer;
-  margin: 0 auto;
-  border: 2px solid #ec008c;
-  -webkit-border-radius: 40px;
-  border-radius: 0px;
-  font: normal 20px "Advent Pro", Helvetica, sans-serif;
-  color: black;
-  text-align: center;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  letter-spacing: 1px;
-  background: rgba(0,0,0,0);
-  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+#contact-left {
+    padding-left: 300px;
+    padding-bottom: 200px;
+    -webkit-justify-content: center;
+    width: 50vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
-.box-css {
-      -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 250px;
-  height: 70px;
-  cursor: pointer;
-  margin: 0 auto;
-  border: 2px solid #ec008c;
-  -webkit-border-radius: 40px;
-  border-radius: 0px;
-  font: normal 20px "Advent Pro", Helvetica, sans-serif;
-  color: black;
-  text-align: center;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  letter-spacing: 1px;
-  background: rgba(0,0,0,0);
-  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+#contact-right {
+    padding-right: 300px;
+    padding-bottom: 200px;
+    -webkit-justify-content: center;
+    width: 50vw;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#submit:hover {
-  color: rgba(255,255,255,1);
-  background: white;
+.highlight:hover{
+   color: #ec008c;
 }
 
-#submit:active {
-  border: 2px solid rgba(33,224,163,1);
-  background: rgba(33,224,163,1);
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-@charset "UTF-8";
-
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  animation-duration: 2s;
-}
-
-.animated.flipOutX,
-.animated.flipOutY,
-.animated.bounceIn,
-.animated.bounceOut {
-  animation-duration: .75s;
-}
-
-@keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    transform: translate3d(0,-4px,0);
-  }
-}
-
+a:link {
+    text-decoration: none;
+    color: #00aeef;
+    } 

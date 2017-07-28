@@ -14,27 +14,37 @@
             <div id="navcontainer">
 						<ul>
 							<li>
-								<button type="button" id="nav-button">Portfolio</button>
+								<button type="submit" id="nav-button" onclick="window.location.href='http://joemeier.cool/'">PORTFOLIO</button>
 							</li>
 							<li>
-								<button type="button" id="nav-button">CONTACT</button>
+								<button type="submit" id="nav-button" onclick="window.location.href='http://joemeier.cool/about-1/'">CONTACT</button>
 							</li>
 						</ul> 
 			</div>
             <div class="background-wrap">
+            <div class="video-text">
+                    <h1 id="video-h1">
+                        <span id="span1" style="color: #00aeef;">Hel</span>lo!
+                    </h1>
+                </div>
                 <div id="bg-layer">
                 </div>
                  <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-                     <source src="images/vid.mp4" type="video/mp4">
+                     <source src="images/vid2.mp4" type="video/mp4">
                  </video>
             </div>
+             <div class="Im-joe">
+                 <h1>
+                     My name is Joe Meier and I would love to work with you!
+                 </h1>
+             </div>
+             
              <div class="info-test">
                 <div class="explain">
                     <p id="left">
-                       <span style="font-size: 30px;color:#ff9d00">I am a graphic designer</span> with a concentration in branding and art direction. I have extensive experience in branding and identity work as well as motion graphic design.I have a range of experience in multiple design fields. I graduated from Pratt Institute with a BFA in Graphic Design and a concentration in branding & art direction. I also have substantial experience in motion design and editing, as well as extensive experience with front end design and coding.
-                    </p>
-                    <p id="right">
-                    In 2015 I founded and directed Roll Gate Studio, a 4,000 sf production studio in Bushwick. At Roll Gate I worked with dozens of production companies on hundreds of films, shoots, and experiences. Clients included NYLON, Vogue, COMPLEX, FADER, Vice, iD Magazine, Verizon, Ben & Jerry's, Real Estate (the band), Bella Hadid, and dozens of others.( We sold in May 2017 to BEYOND Studios.)
+                       <span id="span1" style="font-size: 35px; color: #00aeef;">I am a graphic designer </span>from Pratt Institute with a BFA in Graphic Design and a concentration in branding and art direction. 
+                       I have a range of experience in multiple design fields. I have substantial experience in<span style="font-size: 35px;color: #ec008c"> motion 
+                       design </span> and editing, as well as extensive experience with<span style="font-size: 35px; color: #00aeef"> front end design and coding.</span>
                     </p>
                 </div>
             </div>
@@ -48,7 +58,7 @@
                         <ul id="claim-id">
                             <li>
                                 <div id="claim-1">
-                                    <img id="cm1" src="images/coding.svg" style="height: 220px;">
+                                    <img id="cm1" src="images/coding.svg" style="height: 180px;">
                                     <div class="claim-text">
                                         Front End Design
                                     </div>
@@ -56,7 +66,7 @@
                             </li>
                             <li>
                                 <div id="claim-2">
-                                    <img id="cm2" src="images/startup.svg" style="height: 220px;">
+                                    <img id="cm2" src="images/startup.svg" style="height: 180px;">
                                     <div class="claim-text">
                                         Motion Graphic Design
                                     </div>
@@ -64,7 +74,7 @@
                             </li>
                             <li>
                                 <div id="claim-3">
-                                    <img id="cm3" src="images/stationery.svg" style="height: 220px;">
+                                    <img id="cm3" src="images/stationery.svg" style="height: 180px;">
                                     <div class="claim-text">
                                         Branding & Identity
                                     </div>
@@ -73,10 +83,14 @@
                         </ul>
                     </div>
                 </div>
+                <div class="pre-out">
+                    <h1>
+                        Here's what I've been up to!
+                    </h1>
+                </div>
             
     <div class="outro">
-        
-                <div class="card-container">
+                <div class="card-container-left">
                     <div class="card">
                         <div class="side">
                             <h1 id="outro-left-h1">
@@ -91,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="card-container">
+            <div class="card-container-right" id="cyan">
                 <div class="card">
                     <div class="side">
                         <h1 id="outro-right-h1">
@@ -106,14 +120,14 @@
                         </div>                    
                     </div>
                 </div>
-                <div class="card-container">
+                <div class="card-container-left" id="cyan">
                     <div class="card">
                         <div class="side">
                             <h1 id="outro-left-h1">
                                Conde Nast
                             </h1>
                             <h2 id="outro-left-h2">
-                                May 2017 -July 2017
+                                May 2017 - July 2017
                             </h2>
                         </div>
                         <div class="side back">
@@ -121,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="card-container">
+            <div class="card-container-right">
                 <div class="card">
                     <div class="side">
                             <h1 id="outro-right-h1">
@@ -133,23 +147,40 @@
                     </div>
                         
                         <div class="side back" id="nasa">
-                            
-                            <p> Not really, but here is a photo of my dog.  </p>
-                            <img src="images/dog.png" style= "transform:rotate(8deg)">
-                           
+                            <div class="nasa-top">
+                            <p style="z-index:2"> Not really, but here is a photo of my dog.  </p>
+                            <img src="images/dog.png" style= "transform:rotate(8deg)" "height: 50px" "z-index: 0">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="contact-title">
+                <h1>
+                    Take a look at my work & give me a shout!
+                </h1>
+            </div>
+            <div class="contact-info">
+                <div id="contact-left">
+                    <h1>
+                      <a href="http://joemeier.cool/"><span style="font-size: 50px; color: #00aeef">Portfolio</span></a>
+                    </h1>
+                </div>
+                <div id="contact-right">
+                    <h1>
+                      <a href="http://joemeier.cool/about-1/"><span class="highlight" style="font-size:50px; color: #ec008c;">Contact Info</span></a>
+                    </h1>
+                    <h2>
+                       
+                </div>
+            </div>
+            
+            
             
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
         <script src="js/main.js"></script>
-        
-          
 </body>
 </html>
