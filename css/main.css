@@ -516,6 +516,7 @@ z-index: 0;
     display: -webkit-flex;
     -webkit-justify-content: space-between;
     -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
 }
 
 #contact-left {
