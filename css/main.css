@@ -507,14 +507,15 @@ z-index: 0;
 .contact-title {
     display: -webkit-flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    -webkit-flex-direction: column;
     color: #e008c;
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 200px;
     padding-bottom: 150px;
     text-align: center;
+
 }
 
 
