@@ -613,7 +613,7 @@ a:link {
   width: 15vw;
   height: 60px;
   position: absolute;
-  border: 8px solid #ec1c4e;
+  border: 8px solid #ec008c;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
@@ -637,7 +637,7 @@ a:link {
 }
 .button-row > div > a::after {
   
-  border-color: #ec1c4e;
+  border-color: #00aeef;
   color: #000;
   -webkit-transform: rotateX(90deg) translateZ(25px);
   -moz-transform: rotateX(90deg) translateZ(25px);
